@@ -1,43 +1,105 @@
 <!DOCTYPE html>
-<html>
-<head>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<html class="fullbg" lang="en">
 
-	<title>Hangman Week 3 Assignment</title>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Skeleton Hangman Game - Homework Assignment 3 - JavaScript</title>
+	<link rel="shortcut icon" href="assets/images/skeleton_favicon.ico">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+	<link href="assets/css/full.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
 	
-	<!-- Font Awesome css -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    
-	<!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	
-	<!-- My stylesheet -->
-    <link href="assets/css/style.css" rel="stylesheet">
-	
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+
 <body>
 
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            
+            <div class="navbar-header">
+				<img class="logo" src="assets/images/logo.png">
+                
+            </div>
+            
+        </div>
+        <!-- /.container -->
+    </nav>
 
+	<!-- skeleton hangman content -->
+	<div>
+		
+		<div class="dispCont col-xs-12 col-sm-6 col-md-7">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<!-- JavaScript -->
+			<div id="wordBuildDiv">
+			<h3>Guess What This Word Is:</h3><br>
+				<p id="wordBuildDisplay"></p><br>
+				<h3>Your Clue Is:</h3><br>
+				<p id="clueDisplay"></p>
+			</div>
+			
+			<br>
+			<div id="guessStatusDiv">
+				<h3>Letters You Guessed:</h3><br>
+				<p id="hangmanDisplay"></p><br>
+				<p id="wrongGuessesDisplay"></p><br><br>
+			</div>
+			
+			<div id="wordBuildDiv">
+				<h3>Games You Won: </h3>
+				<h4 id="winsDisplay"></h4>
+			</div>
+			
+			<div id="wordBuildDiv">
+				<h3>Games You Lost: </h3>
+				<h4 id="lossesDisplay"></h4>
+			</div>
+		
+		
+		</div>
+		
+		<div class="dispCont col-xs-6 col-md-5">
+			<h2>Skeleton Hangman</h2>
+			
+			<div class="" id="playKeyDiv">
+				<h2 id="playKeyDisplay"></h2>
+			</div>
+			
+			<div id="skeletoneDisplay">
+			</div>			
+			
+		</div>
+		
+	</div> 
+	
+	
+	    
+    <!-- jQuery -->
+    <script src="assets/javascript/jquery.js"></script>
 	<script src="assets/javascript/game.js"></script>
+		
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/javascript/bootstrap.min.js"></script>
+
 </body>
+
 </html>

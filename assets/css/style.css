@@ -1,0 +1,109 @@
+h1, h2, h3  {
+	color: #ffff00;
+	text-align: center;
+}
+
+.container {
+	overflow: auto;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.dispCont {
+	color: #ffffff;
+	text-align: center;
+	
+}
+
+.logo {
+	padding-top: 5px;
+}
+
+.navbar {
+	background-color: #000000;
+}
+
+
+#wordStatusDiv {
+	float: none;
+	margin-left: 50px;
+	box-sizing: border-box;
+	overflow: auto;
+	min-height: 50px;
+	width: 350px;
+	text-align: center;
+
+}
+
+#wordBuildDiv {
+	float: none;
+	margin-left: 30px;
+	font-size: 26px;
+}
+
+#guessStatusDiv {
+	float: none;
+	margin-left: 30px;
+}
+
+#hangmanDisplay, #wrongGuessesDisplay {
+	font-size: 26px;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 1171px) and (min-width: 768px) {
+
+#skeletoneDisplay{
+	float: none;
+	width: auto;
+	margin-left: 0 0 2em calc((100vw - 350px)/2);
+	display: block;
+}
+
+#wordBuildDiv, #guessStatusDiv, #wordStatusDiv{
+	float: none;
+	display: inline-block;
+}
+
+#wordBuildDiv, #wordStatusDiv {
+	margin-left: calc((100vw - 700px)/2);
+}
+
+}
+
+@media screen and (max-width: 767px) {
+
+#wordBuildDiv, #guessStatusDiv, #wordStatusDiv {
+	float: none;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#skeletoneDisplay {
+	float: none;
+	margin: 0 auto;
+	width: 100%;
+	margin: 0 2em 1em 2em;
+	max-width: calc(100% - 4em);
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
